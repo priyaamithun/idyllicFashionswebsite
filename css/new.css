@@ -1,0 +1,287 @@
+
+/* YOUR CUSTOM STYLES */
+/* global feilds  */ 
+/* formatting */
+*, *:before, *:after {
+	margin: 0;
+	padding: 0;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+    
+	color: #fff;
+}
+.container-fluid{
+    padding-left: 0;
+    padding-right:0;
+    width:100%;
+    }
+
+    #logo{
+        padding: 30px;
+        text-align: center;
+        max-width:1200px;
+        min-height:180px;
+    
+     }
+     nav{
+        overflow: hidden;
+        z-index:2;
+    
+        background-color:#8bc34a;
+    }
+    
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        
+    }
+    
+    li{
+        
+        float: left;
+    }
+    li a{
+        display: block;
+        color:white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+    li a:hover{
+        background-color:rgba(121, 85, 72, 0.7);
+    }
+    a:visited{
+    color:white;
+    }
+    a:link{
+        color: white;
+    }
+    a.active{
+            background-color:rgba(121, 85, 72, 0.7);
+    
+    }
+
+h1 {
+	font: 2.25em/1 Helvetica, sans-serif;
+    margin-bottom: .667em;
+    color:black;
+}
+.card{
+    color: black;
+}
+
+.main {
+	padding: 1.5em 3em 1.5em 1.5em;
+}
+.sidebar {
+    height:900px;
+	padding: 2em 1.5em;
+    color:black;
+    width:20%;
+    margin: 35px 10px 10px 80px;
+    
+    border:1px solid lightgray;
+    
+}
+
+@media (min-width:43.75em) {
+
+	/* responsive layout */
+	.candy-wrapper {
+		max-width: 100%;
+		margin: 0 auto;
+		position: relative;
+	}
+	.main {
+		display:inline-block;
+		width: 75%;
+		vertical-align: top;
+	}
+	.sidebar {
+		display: inline-block;
+		width: 18%;
+        vertical-align: top;
+        float:left;
+	}
+
+	/* loaded fixed-sticky polyfill
+	https://github.com/filamentgroup/fixed-sticky */
+	.fixedsticky {
+		top: 0;
+	}
+}
+ /* global feilds  */ 
+
+.row{
+     margin: 20px;
+ }
+#cards{
+    width:270px;
+}
+
+    .social a{
+        font-size:30px;
+    
+    }
+    .social i:hover{
+        color:rgba(121, 85, 72, 0.7);
+    }
+
+    .panel{
+            padding-left: 50px;
+            padding-top: 10px;
+            padding-right: 50px; 
+        }
+
+#about{
+    color:black;
+    padding-left: 50px;
+    padding-top: 50px;
+    padding-right: 50px; 
+}
+#search {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    
+    -webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+
+    -webkit-transform: translate(0px, -100%) scale(0, 0);
+	-moz-transform: translate(0px, -100%) scale(0, 0);
+	-o-transform: translate(0px, -100%) scale(0, 0);
+	-ms-transform: translate(0px, -100%) scale(0, 0);
+	transform: translate(0px, -100%) scale(0, 0);
+    
+    opacity: 0;
+}
+
+#search.open {
+    -webkit-transform: translate(0px, 0px) scale(1, 1);
+    -moz-transform: translate(0px, 0px) scale(1, 1);
+	-o-transform: translate(0px, 0px) scale(1, 1);
+	-ms-transform: translate(0px, 0px) scale(1, 1);
+	transform: translate(0px, 0px) scale(1, 1); 
+    opacity: 1;
+    z-index: 2;
+}
+
+#search input[type="search"] {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    background: rgba(0, 0, 0, 0);
+    font-size: 30px;
+    font-weight: 300;
+    text-align: center;
+    border: 0px;
+    margin: 0px auto;
+    margin-top: -51px;
+    padding-left: 30px;
+    padding-right: 30px;
+    outline: none;
+}
+#search .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: 61px;
+    margin-left: -45px;
+}
+#search .close {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    color: #fff;
+	background-color: #428bca;
+	border-color: #357ebd;
+	opacity: 1;
+	padding: 10px 17px;
+	font-size: 27px;
+}
+ 
+
+[type="checkbox"]:not(:checked),
+[type="checkbox"]:checked {
+  position: absolute;
+  left: -9999px;
+}
+[type="checkbox"]:not(:checked) + label,
+[type="checkbox"]:checked + label {
+  position: relative;
+  padding-left: 1.95em;
+  cursor: pointer;
+}
+
+/* checkbox aspect */
+[type="checkbox"]:not(:checked) + label:before,
+[type="checkbox"]:checked + label:before {
+  content: '';
+  position: absolute;
+  left: 0; top: 0;
+  width: 1.25em; height: 1.25em;
+  border: 2px solid #ccc;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,.1);
+}
+/* checked mark aspect */
+[type="checkbox"]:not(:checked) + label:after,
+[type="checkbox"]:checked + label:after {
+  content: '✔';
+  position: absolute;
+  top: .2em; left: .275em;
+  font-size: 1.4em;
+  line-height: 0.8;
+  color:rgba(121, 85, 72, 0.7);
+  transition: all .2s;
+  font-family: Helvetica, Arial, sans-serif;
+}
+/* checked mark aspect changes */
+[type="checkbox"]:not(:checked) + label:after {
+  opacity: 0;
+  transform: scale(0);
+}
+[type="checkbox"]:checked + label:after {
+  opacity: 1;
+  transform: scale(1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
