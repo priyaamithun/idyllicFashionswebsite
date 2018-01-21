@@ -89,11 +89,11 @@ $('#silkthread').on('click',function(){
           $(this).toggleClass("fa-heart fa-heart-o");
         });
 
-        
+      /*  
         (function() {
           'use strict';
         
-          window.addEventListener('load', function() {
+        window.addEventListener('load', function() {
             var form = document.getElementById('needs-validation');
             form.addEventListener('submit', function(event) {
               if (form.checkValidity() === false) {
@@ -103,4 +103,4 @@ $('#silkthread').on('click',function(){
               form.classList.add('was-validated');
             }, false);
           }, false);
-        })();
+        })();*/

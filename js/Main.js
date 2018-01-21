@@ -69,3 +69,4 @@ $('#silkthread').on('click',function(){
  $('#forgotPassword').on('click',function(){
  window.location="forgotPassword.html";
 });
+

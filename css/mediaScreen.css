@@ -1,0 +1,137 @@
+
+         #menu-icon{
+    
+            display: inline-block;
+            
+            
+            
+        }
+        #menu-icon div {
+    
+            width: 35px;
+            height: 2px;
+            background-color: rgba(121, 85, 72, 0.7);
+            margin: 5px 0 0 5px;
+        }
+          
+        
+      nav ul,  nav:active ul{
+        display:none;
+        z-index: 1000;
+        position:absolute;
+        width:190px;
+        background-color:#8bc34a;
+        border-bottom:2px solid rgba(121, 85, 72, 0.7);
+    
+         border-left: 2px solid rgba(121, 85, 72, 0.7);  
+         padding: 0;
+         margin: 0;
+    }
+   
+
+   li a:hover{
+
+        background-color:rgba(121, 85, 72, 0.7);
+        
+    }
+    nav:hover ul{
+        display:grid;
+        margin-top:49px;
+    
+
+    }
+
+nav ul li a{
+    width:100% !important;
+}
+
+#logo{
+    padding: 30px;
+    text-align: center;
+    width:100%;
+  height:190px;
+  margin-bottom:3px ;
+  background-image: url("./Images/logo/logonew23mobile.png"); background-repeat: no-repeat;
+}
+
+.carousel{
+    max-width:500px;
+    max-height:250px;
+    margin: auto;
+
+     }
+    
+     p {
+        text-align: center;
+        margin-bottom: 30px;
+        line-height: 24px;
+      }
+    
+      .hr-sect {
+        display: flex;
+        flex-basis: 100%;
+        align-items: center;
+        color: rgba(0, 0, 0, 0.35);
+        margin: 15px 20px;
+        padding-left: 60px;
+        padding-top:20px;
+      
+    
+        
+    }
+    
+    .hr-sect::before,
+    .hr-sect::after {
+        content: "";
+        flex-grow: 1;
+        background: rgba(0, 0, 0, 0.35);
+        height: 1px;
+        font-size: 0px;
+        line-height: 0px;
+        margin: 10px 8px;
+        
+    }
+    div.combo{
+        
+        display:grid;
+         margin:10px;
+         margin-left:48px; 
+          
+         }
+         div.polaroid {
+            width: 80%;
+            background-color: white;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            margin-bottom: 25px;
+            float: left;
+            margin: 20px;
+            margin-top:55px;
+            
+          }
+footer i{
+    margin-right: 30px;
+}
+#map{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:300px;
+}
+#map iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+.sidebar {
+    height:900px;
+  	padding: 2em 1.5em;
+    color:black;
+    width:20%;
+    position: relative;
+    margin: 50px 10px 10px 80px;
+    border:1px solid lightgray;
+  }
+
+ 

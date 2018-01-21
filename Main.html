@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -11,22 +13,37 @@
     <link href="css/Main.css" rel="stylesheet">
 
     <link href="Range/rangeslider.css" rel="stylesheet">
- 
+    <link rel="stylesheet" href="css/mediaScreen.css" media="screen and (max-width: 768px)">
+    <link rel="stylesheet" href="css/mediaScreen1.css" media="screen and (max-width: 576px)">
+    <link rel="stylesheet" href="css/mediaScreen 992.css" media="screen and (max-width: 992px)">
+    
+    
+
+
+
+
 <title>
-    SilkThread
+    Home
 </title>
 
 </head>
 <body onscroll="myFunction()">
-          
-<div class="header" style="background-image: url('logonew23.png'); background-repeat: no-repeat;">
+ <header>   
+        <div id="header-inner" >     
+<div id="logo" style="background-image: url('./Images/logo/logonew23.png'); background-repeat: no-repeat;">
            
-</div>
+</div><!--logo-->
          
-<div class="container-fluid">
 
-        <div id="navbar">
+        
+        <nav id="navbar">
+                <a href="#" id="menu-icon">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </a>
                 
+
 <ul>
                           
                               
@@ -58,7 +75,9 @@
                       </ul>
   
               
-            </div>
+                    </nav>
+                    </div>
+            
             <div id="search"><!--search -->
                 <button type="button" class="close">×</button>
                 <form>
@@ -66,30 +85,28 @@
                     <button type="submit" class="btn btn-primary">Search</button>
                 </form>
             </div><!--search -->    
+        </header>
         
         
         
         
         
-        
-        
-        </div><!--navbar-->
+        <div class="container-fluid">    
+        <div class="section">
+            <div class="row">
+                <div class="col-lg-12">
             <div class="carousel">
 
 <!--Carousel Wrapper-->
 <div id="carousel-example-2" class="carousel slide carousel-fade" data-ride="carousel">
         <!--Indicators-->
-        <ol class="carousel-indicators">
-            <li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
-            <li data-target="#carousel-example-2" data-slide-to="1"></li>
-            <li data-target="#carousel-example-2" data-slide-to="2"></li>
-        </ol>
+      
         <!--/.Indicators-->
         <!--Slides-->
         <div class="carousel-inner" role="listbox">
             <div class="carousel-item active">
                 <div class="view hm-black-slight">
-                    <img class="d-block w-100" src="d:\IdyllicFashions\New folder\Images\sale1.jpg" alt="First slide">
+                    <img class="d-block w-100" src="./Images/parallex/sale1.jpg" alt="First slide">
                     <div class="mask"></div>
                 </div>
                 <div class="carousel-caption">
@@ -100,7 +117,7 @@
             <div class="carousel-item">
                 <!--Mask color-->
                 <div class="view hm-black-slight">
-                    <img class="d-block w-100" src="d:\IdyllicFashions\New folder\Images\sale4.png" alt="Second slide">
+                    <img class="d-block w-100" src="./Images/parallex/sale4.png" alt="Second slide">
                     <div class="mask"></div>
                 </div>
                 <div class="carousel-caption">
@@ -111,7 +128,7 @@
             <div class="carousel-item">
                 <!--Mask color-->
                 <div class="view hm-black-slight">
-                    <img class="d-block w-100" src="d:\IdyllicFashions\New folder\Images\sale6.jpg" alt="Third slide">
+                    <img class="d-block w-100" src="./Images/parallex/sale6.jpg" alt="Third slide">
                     <div class="mask"></div>
                 </div>
                 <div class="carousel-caption">
@@ -123,12 +140,17 @@
         <!--/.Slides-->
         <!--Controls-->
         <a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
+                <span>
+                        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                </span>
+                <span class="sr-only">Previous</span>
         </a>
         <a class="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
+                <span>
+                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                </span>
+                <span class="sr-only">Next</span>
+            
         </a>
         <!--/.Controls-->
     </div>
@@ -136,24 +158,16 @@
        
     <!-- divider-->
     </div>
+    </div>
+    </div>
+    </div>
     
-    <div class="hr-sect" style="width:80%;"><h1>Combo Offer</h1></div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    
+    <div class="hr-sect" style="width:80%; margin-top:50px;" ><h1>Combo Offer</h1></div>
+    <div class="section">
+            <div class="row">
+                <div class="col-sm-12">
 <div class="combo">
 <div class="polaroid">
         
@@ -190,6 +204,9 @@
 
 
 </div>
+</div>
+</div>
+</div>
 
 
 <div class="hr-sect" style="width:80%;"><h1>Hot Deals</h1></div>
@@ -205,7 +222,7 @@
       </div>
       
       <div class="polaroid">
-        <img src="d:\IdyllicFashions\New folder\Images\Terracotta\FaceSetTer1.jpg" alt="Norway" style="width:100%">
+        <img src=".\Images\Terracotta\FaceSetTer1.jpg" alt="Norway" style="width:100%">
         <div class="container">
           <p>Northern Lights in Norway</p>
         </div>
@@ -291,23 +308,11 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 <div class="combo">
 <div class="polaroid">
         
 
-        <img src="garden7.jpg" alt="Norway" style="width:100%">
+        <img src="./Images/Blogpics/3.jpg" alt="Norway" style="width:100%">
         <div class="container">
           <p>Northern Lights in Norway</p>
         </div>
@@ -315,19 +320,19 @@
       </div>
       
       <div class="polaroid">
-        <img src="garden7.jpg" alt="Norway" style="width:100%">
+        <img src="./Images/Blogpics/3.jpg" alt="Norway" style="width:100%">
         <div class="container">
           <p>Northern Lights in Norway</p>
         </div>
       </div>
       <div class="polaroid">
-            <img src="garden7.jpg" alt="Norway" style="width:100%">
+            <img src="./Images/Blogpics/3.jpg" alt="Norway" style="width:100%">
             <div class="container">
               <p>Northern Lights in Norway</p>
             </div>
           </div>
           <div class="polaroid">
-                <img src="garden7.jpg" alt="Norway" style="width:100%">
+                <img src="./Images/Blogpics/3.jpg" alt="Norway" style="width:100%">
                 <div class="container">
                   <p>Northern Lights in Norway</p>
                 </div>
@@ -347,16 +352,16 @@
         <div style="background-color: rgba(121, 85, 72, 0.7);">
             <div class="container">
                 <!--Grid row-->
-                <div class="row py-4 d-flex align-items-center">
+                <div id="row" class="row py-4 d-flex align-items-center">
     
                     <!--Grid column-->
                     <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
-                        <h6 class="mb-0 white-text">Get connected with us on social networks!</h6>
+                        <h6  id="socialgroup" class="mb-0 white-text">Get connected with us on social networks!</h6>
                     </div>
                     <!--Grid column-->
     
                     <!--Grid column-->
-                    <div class="col-md-6 col-lg-7 text-center text-md-right social">
+                    <div  id ="socialgroups"class="col-md-6 col-lg-7 text-center text-md-right social">
                         <!--Facebook-->
                         <a class="icons-sm fb-ic ml-0" href="https://www.facebook.com/idyllic.terracotta/"><i class="fa fa-facebook text mr-lg-4"> </i></a>
                         <!--Twitter-->
@@ -377,13 +382,13 @@
     
         <!--Footer Links-->
         <div  class="container mt-3 mb-4 text-center text-md-left" style="background-color:#8bc34a;" >
-            <div class="row mt-1">
+            <div  class="row mt-1">
     
                 <!--First column-->
                 <div class="col-md-3 col-lg-4 col-xl-3 mb-r">
                     <h6 class="title font-bold"><strong>Idyllic Fashions</strong></h6>
                     <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-                    <p>Here you can find all the variety of fashion jwellery.</p>
+                    <p>Here you can find all the<br> variety of fashion jwellery.</p>
                 </div>
                 <!--/.First column-->
     
@@ -402,9 +407,10 @@
                 </div>
                 <!--/.Fourth column-->
 
-
-
-
+ <div id="map" class="col-md-4 col-lg-3 col-xl-3">
+        <h6 class="title font-bold" id="contact"><strong>Locations</strong></h6>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24133.008029928747!2d-74.61864303433933!3d40.880081073871175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c39ffe00c7a3ef%3A0xb22032de36c0602!2sMine+Hill+Township%2C+NJ!5e0!3m2!1sen!2sus!4v1516225937244" width="560" height="280" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
             </div>
         </div>
         <!--/.Footer Links-->

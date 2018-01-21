@@ -1,0 +1,57 @@
+
+
+
+.carousel{
+    max-width:600px;
+    max-height:300px;
+    margin: auto;
+    
+     }
+
+     p {
+                text-align: center;
+                margin-bottom: 30px;
+                line-height: 24px;
+              }
+            
+              .hr-sect {
+                display: flex;
+                flex-basis: 100%;
+                align-items: center;
+                color: rgba(0, 0, 0, 0.35);
+                margin: 15px 20px;
+                padding-left: 60px;
+                padding-top:20px;
+              
+            
+                
+            }
+            
+            .hr-sect::before,
+            .hr-sect::after {
+                content: "";
+                flex-grow: 1;
+                background: rgba(0, 0, 0, 0.35);
+                height: 1px;
+                font-size: 0px;
+                line-height: 0px;
+                margin: 10px 8px;
+                
+            }
+            div.combo{
+                
+                display:grid;
+                 margin:10px;
+                 margin-left:48px; 
+                  
+                 }
+                 div.polaroid {
+                    width: 80%;
+                    background-color: white;
+                    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                    margin-bottom: 25px;
+                    float: left;
+                    margin: 20px;
+                    margin-top:55px;
+                    
+                  }

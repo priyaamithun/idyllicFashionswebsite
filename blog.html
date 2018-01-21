@@ -11,9 +11,15 @@
     <link href="css/blog.css" rel="stylesheet">
 
     <link href="Range/rangeslider.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/mediaScreen.css" media="screen and (max-width: 768px)">
+    <link rel="stylesheet" href="css/mediaScreen1.css" media="screen and (max-width: 576px)">
+    <link rel="stylesheet" href="css/mediaScreen 992.css" media="screen and (max-width: 992px)">
+    
+    
+
 
     <title>
-        testing Websites
+        Blog
     </title>
 
 
@@ -21,54 +27,67 @@
   </head>
 <body onscroll="myFunction()">
 
-    <div class="header" style="background-image: url('logonew23.png'); background-repeat: no-repeat;"><!--header-->
-
-        </div><!--header tag-->
-    
-        
-<div class="container-fluid"><!--container tag-->
-     
-    <div id="navbar"><!--navbar-->
-        
-<ul>
-                  
-                      
-<li><a class="active" href="#" id="home"><i class="fa fa-home fa-lg" aria-hidden="true" style="color: white;" ></i></a></li>
-                      <li><a href="#" id="silkthread">SilkThread</a></li>
-                      <li><a href="#" id="silverJwellery">SilverJwellery</a></li>
-                      <li><a href="#" id="terracotta">Terracotta</a></li>
-                      <li><a href="#"  id="fashionJwellery">FashionJwellery</a></li>
-                      
-                      <li><a href="#"  id="dress">Dress</a></li>
-                      <li><a href="#" id="contact">Contact</a></li>
-            
-                      <li><a href="#" id="blog">Blog</a></li>
-                      <li><a href="#search">Search</a></li>
-                      
-                      <div class="menu"><!--menu-->
-                      <li><a  href="#" data-toggle="modal" data-target="#modalLRForm" id="#mybtn"><i class="fa fa-sign-in" aria-hidden="true" style="color:white;"></i>Sign In</a>
-                      </li>
-                      
-                      
-                    <li><a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Cart</a>
-                    
-                                        
+        <header>   
+                <div id="header-inner" >     
+        <div id="logo" style="background-image: url('./Images/logo/logonew23.png'); background-repeat: no-repeat;">
+                   
+        </div><!--logo-->
                  
-                    </li>
-             
-                </div><!--menu-->
+        
+                
+                <nav id="navbar">
+                        <a href="#" id="menu-icon">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </a>
+                        
+        
+        <ul>
+                                  
+                                      
+        <li><a class="active" href="#" id="home"><i class="fa fa-home fa-lg" aria-hidden="true" style="color: white;" ></i></a></li>
+                                      <li><a href="#" id="silkthread">SilkThread</a></li>
+                                      <li><a href="#" id="silverJwellery">SilverJwellery</a></li>
+                                      <li><a href="#" id-"terracotta">Terracotta</a></li>
+                                      <li><a href="#" id="fashionJwellery">FashionJwellery</a></li>
+                                      
+                                      <li><a href="#" id="dress">Dress</a></li>
+                                      <li><a href="#" id="contact">Contact</a></li>
+                            
+                                      <li><a href="#" id="blog">Blog</a></li>
+                                      <li><a href="#search">Search</a></li>
+                                      
+                                      <div class="menu">
+                                      <li><a  href="#" data-toggle="modal" data-target="#modalLRForm" id="#mybtn"><i class="fa fa-sign-in" aria-hidden="true" style="color:white;"></i>Sign In</a>
+                                      </li>
+                                      
+                                      
+                                    <li><a href="#" id="cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Cart</a>
+                                    
+                                                        
+                                 
+                                    </li>
+                             
+                                   </div>
+                          
+                              </ul>
           
-              </ul>
-              <div id="search"><!--search -->
-                <button type="button" class="close">×</button>
-                <form>
-                    <input type="search" value="" placeholder="type keyword(s) here" />
-                    <button type="submit" class="btn btn-primary">Search</button>
-                </form>
-            </div><!--search -->    
-
-
-</div><!--navbar-->
+                      
+                            </nav>
+                            </div>
+                    
+                    <div id="search"><!--search -->
+                        <button type="button" class="close">×</button>
+                        <form>
+                            <input type="search" value="" placeholder="type keyword(s) here" />
+                            <button type="submit" class="btn btn-primary">Search</button>
+                        </form>
+                    </div><!--search -->    
+                </header>
+                
+                
+                
 
 <div class ="links" id="scroll"><!--links-->
     <li id="btn1" href="#services"></button><a href="#hello">My works</a></li>
@@ -237,7 +256,7 @@ Ex dicit graeci dissentias vim, recteque similique theophrastus mel id, vim in m
                                 <div class="col-md-3 col-lg-4 col-xl-3 mb-r">
                                     <h6 class="title font-bold"><strong>Idyllic Fashions</strong></h6>
                                     <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-                                    <p>Here you can find all the variety of fashion jwellery.</p>
+                                    <p>Here you can find all the<br> variety of fashion jwellery.</p>
                                 </div>
                                 <!--/.First column-->
                     
@@ -256,7 +275,10 @@ Ex dicit graeci dissentias vim, recteque similique theophrastus mel id, vim in m
                                 </div>
                                 <!--/.Fourth column-->
                 
-                
+                                <div id="map" class="col-md-4 col-lg-3 col-xl-3">
+                                        <h6 class="title font-bold" id="contact"><strong>Locations</strong></h6>
+                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24133.008029928747!2d-74.61864303433933!3d40.880081073871175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c39ffe00c7a3ef%3A0xb22032de36c0602!2sMine+Hill+Township%2C+NJ!5e0!3m2!1sen!2sus!4v1516225937244" width="560" height="280" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                </div>     
                 
                 
                             </div>
